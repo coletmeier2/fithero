@@ -18,7 +18,6 @@ public class HeroService {
     @Autowired
     private HeroDao heroDao;
     
-    // Basic CRUD Operations
     public Hero createHero(String name, Integer height, Integer weight) {
         if (heroDao.existsByName(name)) {
             throw new IllegalArgumentException("Hero with name '" + name + "' already exists");
@@ -66,8 +65,6 @@ public class HeroService {
     public void addExperience(Long heroId, Long experience) {
         Hero hero = getHeroById(heroId);
         hero.setExperience(hero.getExperience() + experience);
-        
-        // Check for level up
         checkLevelUp(hero);
         heroDao.save(hero);
     }
