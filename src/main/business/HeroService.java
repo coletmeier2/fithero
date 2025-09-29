@@ -121,6 +121,25 @@ public class HeroService {
         }
     }
     
+    /*
+     * TODO: Required Experience
+     * Consider time in the calculation
+     * Consider do I want experience to be more of how experienced you are in the gym or more strength based or more based on gameplay???
+     * NOTE: If its time based it can be steady experience gain, with jumps in trying new workouts;
+     * If strength and experience are separate then there can be multipliers based on strength level v experience, eg weak but knowledgable multiplier 
+     * PROS: 
+     * CONS:
+     * Ref: https://gamedev.stackexchange.com/questions/13638/algorithm-for-dynamically-calculating-a-level-based-on-experience-points
+     * Question: Should the logic for time be calculated here or at the point of when the workout/experience is applied
+     * -> Character level
+     * PROS: Tight coupling with character stats eg stamina and time played potentially
+     * CONS: Potenially called lots of times, used in checkLevelUp
+     * WORKAROUND: ???
+     * -> Workout level
+     * PROS: Less data will be sent around
+     * CONS: Bloated code with repeated if statements
+     * WORKAROUND: Helper method (still slight bloating)
+     */
     private long calculateRequiredExperience(Integer level) {
         // TODO: Implement your leveling formula
         // Example: 1000 * level * level (quadratic growth)
