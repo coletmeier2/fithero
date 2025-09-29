@@ -127,6 +127,7 @@ public class HeroService {
      * Consider do I want experience to be more of how experienced you are in the gym or more strength based or more based on gameplay???
      * NOTE: If its time based it can be steady experience gain, with jumps in trying new workouts;
      * If strength and experience are separate then there can be multipliers based on strength level v experience, eg weak but knowledgable multiplier 
+     * The question is do I want this to be more of a game that is fueled by gym progress or a gym progress tracker that is a game?
      * PROS: 
      * CONS:
      * Ref: https://gamedev.stackexchange.com/questions/13638/algorithm-for-dynamically-calculating-a-level-based-on-experience-points
