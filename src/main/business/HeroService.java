@@ -14,6 +14,10 @@ import java.util.Optional;
 @Service
 @Transactional
 public class HeroService {
+    /*
+     * Future Idea, can come up with different difficulties, can do like hardcore where you can also track food and macros
+     * Lots of work involved, more end to end product
+     */
     
     @Autowired
     private HeroDao heroDao;
