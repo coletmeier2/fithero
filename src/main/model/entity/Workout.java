@@ -14,6 +14,10 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Workout {
+    /*
+     * Consider adding a fatigue field to the workout, because some of the compound movements will hit more muscle,
+     * penalty of more fatigue, e.g. deadlift
+     */
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
